@@ -7,14 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
 
 <div class="container">
-    <header class="page-header">
+    <header class="header">
         <div class="center-block">
-            <div class="page-header-wrp-btn">
-                <a href="index.html" class="page-header-logo">
+            <div class="header-right">
+                <a href="index.html" class="header-logo">
                     <img src="images/search_top.svg" alt="logo" height="38">
                 </a>
                 <form action="#" class="page-header-search-form">
@@ -27,8 +30,7 @@
                     </label>
                 </form>
             </div>
-
-            <div class="page-header-wrp-btn">
+            <div class="header-left">
                 <nav>
                     <label class="menu-btn" for="menu-switch">
                         <span></span>
@@ -41,12 +43,49 @@
                         <li class="menu-list-item">
                             <span class="menu-list-title">menu</span>
                         </li>
+                        <li class="menu-list-item">
+                            <a href="#">man</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <ul class="menu-sublist">
+                                <li class="menu-sublist-item">
+                                    <a href="#">Accessories</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
+                <a href="#" class="header-contacts">
+                    <img src="images/contacts.svg" alt="contacts">
+                </a>
+                <a href="#" class="header-basket">
+                    <img class="basket basket-img" src="images/basket.svg" alt="basket">
+                    <img class="basket circle" src="images/Ellipse_rose.svg">
+                    <img class="bascet five" src="images/5.svg">
+                </a>
             </div>
         </div>
     </header>
-
+    <main>
+        <section class="banner">
+            <div class="banner-top">
+                <h2 class="text tittle"><span class="text-black-900">the brand</span>
+                    <div class="text-two-str">
+                        <span class="text-black-700">of luxerios </span>
+                        <span class="text-rose-700">fashion</span>
+                    </div>
+                </h2>
+            </div>
+        </section>
+        <section class="content">
+            <div class="showcase-line">
+                <div class="showcase showcase1"></div>
+                <div class="showcase showcase2"></div>
+                <div class="showcase showcase3"></div>
+            </div>
+            <div class="showcase4"></div>
+        </section>
+    </main>
     <footer>
 
     </footer>

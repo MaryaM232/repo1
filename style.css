@@ -1,36 +1,428 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: Lato;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+}
+
 .header {
-  height: 75px;
   background: #222222;
 }
 
-.search {
-  background: #222222;
-  border: none;
+.header-logo {
+  padding-right: 41px;
 }
 
-.footer {
-  height: 868px;
+.header-basket {
+  position: relative;
 }
 
-.wrapper {
-  min-height: 100vh;
+.basket-img {
+  z-index: 0;
+  position: absolute;
+}
+
+.circle {
+  z-index: 1;
+  position: absolute;
+  left: 26px;
+  top: -5px;
+}
+
+.five {
+  z-index: 2;
+  position: absolute;
+  left: 32px;
+  top: 0;
+}
+
+.center-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner {
+  min-height: 764px;
+  margin: 0 0 65px 0;
+  background-color: #F1E4E6;
+  background-image: url(images/man_top.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left 20px;
+}
+
+.banner-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-height: inherit;
+}
+
+/*код розовой палочки*/
+.tittle {
+  text-transform: uppercase;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 377px;
+  padding-right: 25%;
 }
 
-.top {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.tittle::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 92px;
+  background-color: #F16D7F;
+  position: absolute;
+  top: 10px;
+  left: -26px;
+}
+
+/*конец кода розовой палочки*/
+.text {
+  font-family: 'Lato', sans-serif;
+}
+
+.text-black-900 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+}
+
+.text-black-700 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 58px;
+  color: #222222;
+}
+
+.text-rose-700 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 58px;
+  color: #F16D7F;
+}
+
+/*кнопка поиска*/
+.page-header-search-form {
+  width: 26px;
+  min-height: 26px;
+  position: relative;
+  padding-top: 10px;
+}
+
+.page-header-search-form:hover svg {
+  fill: orange;
+}
+
+.page-header-search-btn {
+  width: 20px;
+  min-height: 20px;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 8px;
+  left: 35px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial;
+  text-transform: capitalize;
+}
+
+.header-contacts {
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
+.page-header-search-btn:focus {
+  width: 180px;
+  min-height: 20px;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+  border: 2px solid #fff;
+}
+
+.page-header-search-btn:focus ~ label > svg {
+  fill: green;
+}
+
+.page-header-search-btn:active ~ label > svg {
+  fill: red;
+}
+
+/*конец кода кнопки поиска*/
+/*код меню поиска*/
+.menu-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+}
+
+.menu-btn:hover span,
+.menu-btn:hover span::before,
+.menu-btn:hover span::after {
+  background-color: orange;
+}
+
+.menu-btn:active span,
+.menu-btn:active span::before,
+.menu-btn:active span::after {
+  background-color: red;
+}
+
+.menu-btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.menu-btn span::after {
+  top: 10px;
+}
+
+#menu-switch {
+  display: none;
+}
+
+#menu-switch:checked ~ .menu-list {
+  display: block;
+}
+
+#menu-switch:checked ~ .page-header-banner {
+  border: 8px solid red;
+}
+
+.menu-list {
+  display: none;
+  width: 100%;
+  max-width: 232px;
+  min-height: 764px;
+  /* значение в свойстве min-height удобно задать через переменную равную высоте второго блока */
+  padding: 16px 33px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  top: 75px;
+  /* значение в свойстве top удобно задать через переменную равную высоте первого блока */
+  right: 0;
+  z-index: 20;
+}
+
+.menu-list-close-btn {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 170px;
+}
+
+.menu-list-close-btn::before,
+.menu-list-close-btn::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #6F6E6E;
+  border-radius: 10px;
+  position: absolute;
+  top: 5px;
+  left: -3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu-list-close-btn::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.menu-list-close-btn:hover::before,
+.menu-list-close-btn:hover::after {
+  background: #B7B6B6;
+}
+
+.menu-list-close-btn:active::before,
+.menu-list-close-btn:active::after {
+  background: #535353;
+}
+
+.menu-list-title {
+  display: block;
+  margin: 9px 0 24px 0;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.menu-title > a,
+.menu-list-item > a,
+.menu-sublist-item > a {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;
+}
+
+.menu-list-item {
+  list-style-type: none;
+}
+
+.menu-list-item > a {
+  display: block;
+  margin: 0 0 11px 0;
+  color: #F16D7F;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu-list-item:hover > a {
+  color: #9889D7;
+}
+
+.menu-list-item:active > a {
+  color: #9D2334;
+}
+
+.menu-sublist {
+  padding: 0 0 0 21.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+}
+
+.menu-sublist-item {
+  list-style-type: none;
+}
+
+.menu-sublist-item > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 11px 0;
+  color: #6F6E6E;
+}
+
+.menu-sublist-item a {
+  text-decoration: none;
+}
+
+.menu-sublist-item:hover a {
+  text-decoration: underline;
+}
+
+.menu-sublist-item:active a {
+  text-decoration: none;
+}
+
+/*конец кода меню*/
+.showcase1 {
+  background-image: url(images/card1.jpg);
+}
+
+.showcase2 {
+  background-image: url(images/card2.jpg);
+}
+
+.showcase3 {
+  background-image: url(images/card3.jpg);
+}
+
+.showcase4 {
+  height: 180px;
+  width: 1140px;
+  background-image: url(images/card4.jpg);
+}
+
+.showcase {
+  width: 360px;
+  height: 260px;
+}
+
+.showcase-line {
+  width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.content {
+  width: 1140px;
+  margin-left: 15%;
 }
 /*# sourceMappingURL=style.css.map */
