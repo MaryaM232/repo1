@@ -24,11 +24,20 @@ body {
 
 .header-basket {
     position: relative;
+    display: block;
 }
 
 .basket-img {
     z-index: 0;
     position: absolute;
+}
+
+.header-basket:hover :first-child {
+    fill: orange;
+}
+
+.header-basket:active :first-child {
+    fill: red;
 }
 
 .circle {
@@ -45,11 +54,12 @@ body {
     top: 0;
 }
 
-.center-block {
+.header-center-block {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 75px;
     align-items: center;
+    margin: 0 14.4%;
 }
 
 .header-right {
@@ -85,7 +95,7 @@ body {
     text-align: left;
     flex-direction: column;
     width: 377px;
-    padding-right: 25%;
+    padding-right: 20.75%;
 }
 
 .tittle::before {
@@ -157,6 +167,14 @@ body {
 .header-contacts {
     padding-left: 33px;
     padding-right: 33px;
+}
+
+.header-contacts:hover :first-child {
+    fill: orange;
+}
+
+.header-contacts:active :first-child {
+    fill: red;
 }
 
 .page-header-search-btn:focus {
@@ -358,36 +376,47 @@ body {
 
 
 .showcase1 {
-    background-image: url(images/card1.jpg);
+    background-image: url(images/card1.png);
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
 }
 
 .showcase2 {
-    background-image: url(images/card2.jpg);
+    background-image: url(images/card2.png);
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
 }
 
 .showcase3 {
-    background-image: url(images/card3.jpg);
+    background-image: url(images/card3.png);
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
 }
 
 .showcase4 {
     height: 180px;
-    width: 1140px;
-    background-image: url(images/card4.jpg);
+    max width: 1140px;
+    background-image: url(images/card4.png);
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
 }
 
 .showcase {
     width: 360px;
     height: 260px;
+    list-style-type: none;
 }
 
 .showcase-line {
-    width: 1140px;
+    max width: 1140px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
 .content {
-    width: 1140px;
-    margin-left: 15%;
+    max width: 1140px;
+    margin-left: 14.4%;
+    text-decoration: none;
+    text-transform: uppercase;
 }

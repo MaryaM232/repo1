@@ -25,11 +25,20 @@ body {
 
 .header-basket {
   position: relative;
+  display: block;
 }
 
 .basket-img {
   z-index: 0;
   position: absolute;
+}
+
+.header-basket:hover :first-child {
+  fill: orange;
+}
+
+.header-basket:active :first-child {
+  fill: red;
 }
 
 .circle {
@@ -46,16 +55,18 @@ body {
   top: 0;
 }
 
-.center-block {
+.header-center-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 75px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 14.4%;
 }
 
 .header-right {
@@ -106,7 +117,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 377px;
-  padding-right: 25%;
+  padding-right: 20.75%;
 }
 
 .tittle::before {
@@ -178,6 +189,14 @@ body {
 .header-contacts {
   padding-left: 33px;
   padding-right: 33px;
+}
+
+.header-contacts:hover :first-child {
+  fill: orange;
+}
+
+.header-contacts:active :first-child {
+  fill: red;
 }
 
 .page-header-search-btn:focus {
@@ -388,26 +407,29 @@ body {
 
 /*конец кода меню*/
 .showcase1 {
-  background-image: url(images/card1.jpg);
+  background-image: url(images/card1.png);
+  background-color: rgba(33, 22, 22, 0.7);
+  background-blend-mode: darken;
 }
 
 .showcase2 {
-  background-image: url(images/card2.jpg);
+  background-image: url(images/card2.png);
 }
 
 .showcase3 {
-  background-image: url(images/card3.jpg);
+  background-image: url(images/card3.png);
 }
 
 .showcase4 {
   height: 180px;
   width: 1140px;
-  background-image: url(images/card4.jpg);
+  background-image: url(images/card4.png);
 }
 
 .showcase {
   width: 360px;
   height: 260px;
+  list-style-type: none;
 }
 
 .showcase-line {
@@ -423,6 +445,6 @@ body {
 
 .content {
   width: 1140px;
-  margin-left: 15%;
+  margin-left: 14.4%;
 }
 /*# sourceMappingURL=style.css.map */
