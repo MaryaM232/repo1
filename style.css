@@ -13,9 +13,7 @@ body {
 .container {
   width: 100%;
   max-width: 1600px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: auto;
 }
 
 .header {
@@ -135,6 +133,7 @@ body {
 }
 
 /*конец кода розовой палочки*/
+/*код текста*/
 .text {
   font-family: 'Lato', sans-serif;
 }
@@ -181,6 +180,7 @@ body {
   color: #FFFFFF;
 }
 
+/*конец кодов текста*/
 /*кнопка поиска*/
 .page-header-search-form {
   width: 26px;
@@ -430,6 +430,7 @@ body {
 }
 
 /*конец кода меню*/
+/*код рекламного блока*/
 .showcase1 {
   background-image: url(images/card1.png);
 }
@@ -481,22 +482,37 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-height: inherit;
   width: 100%;
   text-decoration: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 25% 0;
 }
 
+.showcase-link1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: inherit;
+  width: 100%;
+  text-decoration: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5% 0;
+}
+
+/*конец кода рекламного блока*/
 .between-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -505,15 +521,319 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 48px;
 }
 
+.center-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 86px 338px 0 230px;
+}
+
+.socials-item {
+  Width: 31.45px;
+  Height: 32px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+/*код карточек товара*/
+.products {
+  width: 100%;
+  margin: 0 0 95.5px 0;
+}
+
+.products-list {
+  list-style-type: none;
+  margin: 0 auto 18px auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.center-block-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1140px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  display: flex;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  min-height: inherit;
+}
+
+.products-item {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 0 30px 0;
+  position: relative;
+  background: #F8F8F8;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.products-item:hover .products-item-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-item:hover .products-item-btn:hover {
+  background-color: #ccc;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.products-item:hover .products-item-btn:hover svg {
+  fill: #000;
+}
+
+.products-item:hover .products-item-btn:active {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.products-item:hover .products-item-btn:active svg {
+  fill: #fff;
+}
+
+.products-item:hover .products-item-photo-wrp::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(58, 56, 56, 0.86);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.products-item-photo-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #F7E4E2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.products-item-photo {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.products-item-txt-wrp {
+  padding: 25px 18px 20px 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+}
+
+.products-item-title {
+  display: block;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.products-item-txt {
+  margin: 0 0 18px 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+}
+
+.products-item-price {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
+.products-item-btn {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 160px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 30%;
+  left: calc(50% - 80px);
+}
+
+.products-item-btn svg {
+  fill: #fff;
+  margin: 0 11px 0 0;
+}
+
+.products-btn {
+  display: block;
+  width: 100%;
+  max-width: 211px;
+  margin: 0 auto;
+  padding: 14.5px;
+  background-color: #fff;
+  border: 2px solid #F26376;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #F26376;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  text-align: center;
+  word-break: break-all;
+}
+
+.products-btn:hover {
+  background-color: #F26376;
+  color: #fff;
+}
+
+.products-btn:active {
+  background-color: #fff;
+  border: 2px solid #F26376;
+  color: #F26376;
+}
+
+/*конец кода карточек товара*/
+/*начало кода черного длока перед подвалом*/
+.center-block-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  min-height: inherit;
+}
+
+.features {
+  width: 100%;
+  min-height: 341px;
+  padding: 20px;
+  background-color: #222224;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 300px;
+  padding: 0 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.features-item:nth-child(4n-1) {
+  margin: 0;
+}
+
+.features-item-icon {
+  display: block;
+  margin: 0 0 28px 0;
+  fill: #F16D7F;
+}
+
+.features-item-title {
+  display: block;
+  width: 100%;
+  margin: 0 0 16px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.96px;
+  line-height: 23.95px;
+  color: #FBFBFB;
+  text-align: center;
+}
+
+.features-item-txt {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 16.77px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+/*конец кода черного длока перед подвалом*/
 /* ======= subscribe ======= */
 .subscribe {
   width: 100%;
   min-height: 448px;
-  padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(244, 244, 244, 0.7)), to(rgba(244, 244, 244, 0.7))), url("https://i.postimg.cc/tJVR1VWX/Layer-41.png");
@@ -538,7 +858,6 @@ body {
       flex-wrap: wrap;
   width: 100%;
   max-width: 360px;
-  margin: 0 40px 0 0;
 }
 
 .subscribe-info-avatar {
@@ -552,12 +871,8 @@ body {
 
 .subscribe-info-avatar img {
   display: block;
-  width: 150%;
-  height: 150%;
-  /* альтернативный вариант - использовать отрицательные margin, не рекомендуется */
-  position: relative;
-  top: -5px;
-  left: -24px;
+  width: 100%;
+  height: 100%;
 }
 
 .subscribe-info-txt {
@@ -588,7 +903,7 @@ body {
 
 .subscribe-form-title {
   display: block;
-  margin: 0 0 10px 0;
+  margin-top: 49px;
   font-weight: 700;
   font-size: 24px;
   line-height: 40.13px;
@@ -673,4 +988,53 @@ body {
 }
 
 /* ======= end subscribe ======= */
+/*начало код крошки*/
+.copyright {
+  min-height: auto;
+  padding: 23px 230px 23px 235px;
+  background-color: #222224;
+}
+
+.center-bottom-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copyright-txt {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  max-width: 251px;
+  color: #FBFBFB;
+}
+
+.socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.socials-item-link {
+  margin: auto;
+}
+
+.socials-item {
+  margin: 0 7.29px;
+}
+
+/*конец кода крошек*/
 /*# sourceMappingURL=style.css.map */
