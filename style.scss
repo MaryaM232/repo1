@@ -257,6 +257,9 @@ body {
 
 /*конец кодов текста*/
 /*кнопка поиска*/
+div.header-left>form>label>svg {
+    fill: #FFFFFF;
+}
 
 .page-header-search-form {
     width: 26px;
