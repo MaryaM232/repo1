@@ -3,21 +3,40 @@
     padding: 0;
 }
 
+@mixin txt ($txtweight, $txtsize, $txtheight, $txtcolor, ) {
+    font-weight: $txtweight;
+    font-size: $txtsize;
+    line-height: $txtheight;
+    color: $txtcolor;
+}
+
+$weight: 1140px;
+
 body {
     margin: 0;
     background-color: #fff;
     font-family: Lato;
-    box-sizing: border-box;
 }
 
 .container {
     width: 100%;
-    max-width: 1600px;
-    margin: auto;
 }
 
 .header-top {
     background: #222222;
+    min-height: 75px;
+}
+
+.header-center-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*margin: 0 14.4%;*/
+    align-content: space-around;
+    width: 100%;
+    max-width: $weight;
+    margin: 0 auto;
+    min-height: inherit;
 }
 
 .header-logo {
@@ -56,14 +75,6 @@ body {
     top: 0;
 }
 
-.header-center-block {
-    display: flex;
-    justify-content: space-between;
-    height: 75px;
-    align-items: center;
-    margin: 0 14.4%;
-}
-
 .header-right {
     display: flex;
 }
@@ -73,13 +84,10 @@ body {
 }
 
 .banner {
+    width: 100%;
     min-height: 764px;
     margin: 0 0 65px 0;
     background-color: #F1E4E6;
-    background-image: url(images/man_top.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom left 20px;
 }
 
 .banner-top {
@@ -87,11 +95,50 @@ body {
     align-items: center;
     justify-content: flex-end;
     min-height: inherit;
+    background-image: url('https://i.postimg.cc/nh71xLyT/Layer-57-removebg-preview-1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left -67%;
     width: 100%;
-    max-width: 1140px;
+    max-width: $weight;
     margin: 0 auto;
 }
 
+.banner-subtitle {
+    @include txt(700, 32px, 58px, #222222);
+
+    span {
+        color: #F16D7F;
+    }
+}
+
+/*код розовой палочки*/
+.banner-title {
+    text-transform: uppercase;
+    position: relative;
+    /*display: flex;*/
+    display: block;
+    text-align: left;
+    flex-direction: column;
+    width: 100%;
+    max-width: 377px;
+    /*padding-right: 8.7%;*/
+    margin: 0 95px 87px 0;
+    @include txt(900, 48px, 58px, #222222);
+}
+
+.banner-title::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 92px;
+    background-color: #F16D7F;
+    position: absolute;
+    top: 10px;
+    left: -26px;
+}
+
+/*конец кода розовой палочки*/
 /*код хлебных крошек каталог*/
 .breadcrumb-item {
     text-transform: uppercase;
@@ -140,35 +187,10 @@ body {
 }
 
 /*конец кода хлебных крошек каталог*/
-/*код розовой палочки*/
-.tittle {
-    text-transform: uppercase;
-    position: relative;
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    width: 377px;
-    padding-right: 8.7%;
-}
 
-.tittle::before {
-    content: "";
-    display: block;
-    width: 12px;
-    height: 92px;
-    background-color: #F16D7F;
-    position: absolute;
-    top: 10px;
-    left: -26px;
-}
-
-/*конец кода розовой палочки*/
 /*код текста*/
-.text {
-    font-family: 'Lato', sans-serif;
-}
 
-.text-black-900 {
+/*.text-black-900 {
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
@@ -231,7 +253,7 @@ body {
     line-height: 22px;
     color: #4D4D4D;
     text-transform: uppercase;
-}
+}*/
 
 /*конец кодов текста*/
 /*кнопка поиска*/
@@ -849,28 +871,34 @@ body {
 
 /*конец кода навигации по сайту*/
 /*код рекламного блока*/
+.categories {
+    width: 100%;
+    max-width: $weight;
+    margin: 0 auto 96px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 .showcase1 {
-    background-image: url(images/card1.png);
+    background-image: url(images/blonde_in_black_outfit.png);
 
 }
 
 .showcase2 {
-    background-image: url(images/card2.png);
+    background-image: url(images/man_in_blue_jacket.png);
 
 }
 
 .showcase3 {
-    background-image: url(images/card3.png);
+    background-image: url(images/curly_boy_in_a_vest.png);
 }
 
 .showcase4 {
     height: 180px;
-    max-width: 1140px;
-    background-image: url(images/card4.png);
+    max-width: $weight;
+    background-image: url(images/business_abstraction.png);
     background-color: rgba(33, 22, 22, 0.7);
     background-blend-mode: darken;
-    margin-bottom: 96px;
-
 }
 
 .showcase {
@@ -882,17 +910,18 @@ body {
 }
 
 .showcase-line {
-    max-width: 1140px;
+    max-width: $weight;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 
-.content {
-    max-width: 1140px;
-    margin-left: 14.4%;
-    text-decoration: none;
-    text-transform: uppercase;
+.showcase-subtitle {
+    @include txt(400, 16px, 19px, #FFFFFF);
+}
+
+.showcase-title {
+    @include txt(700, 32px, 58px, #f16d7f);
 }
 
 .showcase-link {
@@ -925,10 +954,12 @@ body {
     margin-bottom: 48px;
 }
 
-.center-block {
+.footer-center-block {
     display: flex;
     justify-content: space-between;
-    padding: 86px 338px 0 230px;
+    padding: 86px 10% 0 6%;
+    max-width: $weight;
+    margin: auto;
 }
 
 .socials-item {
@@ -954,7 +985,7 @@ body {
 .center-block-card {
     display: flex;
     justify-content: space-between;
-    max-width: 1140px;
+    max-width: $weight;
     align-items: center;
     padding: 0;
     display: flex;
@@ -1120,7 +1151,7 @@ body {
     justify-content: space-between;
     /* flex-wrap: wrap; */
     width: 100%;
-    max-width: 1140px;
+    max-width: $weight;
     margin: 0 auto;
     min-height: inherit;
 }
@@ -1321,7 +1352,7 @@ body {
 /*начало код крошки*/
 .copyright {
     min-height: auto;
-    padding: 23px 230px 23px 235px;
+    padding: 23px 6% 23px 6%;
     background-color: #222224;
 }
 
@@ -1330,6 +1361,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: $weight;
+    margin: auto;
 }
 
 .copyright-txt {
@@ -1348,12 +1381,16 @@ body {
     margin: auto;
 }
 
-.socials-item:hover>svg {
-    fill: #FFFFFF;
+.socials-item:hover .socials-item-link {
+    fill: #F16D7F;
 }
 
-.socials-item:hover {
+.socials-item:active {
     background-color: #F16D7F;
+
+    .socials-item-link {
+        fill: #FFFFFF;
+    }
 }
 
 .socials-item {
