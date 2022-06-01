@@ -1545,12 +1545,16 @@ div.header-left>form>label>svg {
     display: flex;
     flex-direction: column;
     text-align: center;
+    max-width: 1141px;
+    max-height: 601px;
+    z-index: 2;
+    margin: 65px auto;
 }
 
 .haeder-product-horisontal-line {
     width: 63px;
     height: 3.03px;
-    margin: auto;
+    margin: 12.1px auto;
     background-color: #EF5B70;
 }
 
@@ -1562,14 +1566,64 @@ div.header-left>form>label>svg {
     margin: auto;
 }
 
+.header-product-item {
+    @include txt(300, 14px, 17px, #F16D7F);
+    text-transform: uppercase;
+}
+
+.header-product-item-txt {
+    @include txt(300, 18px, 22px, #4D4D4D);
+    text-transform: uppercase;
+    margin-bottom: 48.4px;
+}
+
 .products-item-center-txt {
     max-width: 555px;
+    @include txt(300, 14px, 17px, #5E5E5E);
 }
 
 .products-btn-prices {
     border: 1px solid #FF6A6A;
     width: 211px;
     height: 47.4px;
+    background-color: #FFFFFF;
+    margin-top: 49px;
+}
+
+.products-btn-prices>svg {
+    fill: #EF5B70;
+}
+
+.products-btn-prices:hover>svg {
+    fill: #FFFFFF;
+}
+
+.products-btn-prices:hover>span {
+    color: #FFFFFF;
+}
+
+.products-btn-prices:hover {
+    background-color: #FF6A6A;
+}
+
+.products-btn-txt {
+    @include txt(400, 16px, 19px, #F26376);
+    margin: auto
+}
+
+.products-item-price-txt {
+    @include txt(300, 24px, 29px, #EF5B70);
+    margin-top: 32px;
+}
+
+.nav-item:nth-child(1)>svg,
+.nav-item:nth-child(2)>svg,
+.nav-item:nth-child(3)>svg {
+    fill: #6F6E6E;
+}
+
+.nav-item {
+    margin-right: 10px;
 }
 
 .haeder-product-horisontal {
@@ -1577,6 +1631,7 @@ div.header-left>form>label>svg {
     height: 1px;
     margin: auto;
     background-color: #EAEAEA;
+    margin: 65px auto;
 }
 
 .product-nav-item {
@@ -1588,13 +1643,20 @@ div.header-left>form>label>svg {
     height: 777px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    min-height: inherit;
     background-image: url(images/woman_in_white_t_shirt.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: bottom left -67%;
-    width: 100%;
+    background-position: center;
     max-width: $weight;
     margin: 0 auto;
+}
+
+.product-page-item {
+    width: 47px;
+    height: 47px;
+}
+
+.products-card {
+    max-width: 2100px;
+    margin: auto;
 }
