@@ -40,7 +40,7 @@
                         <input id="menu-switch" type="checkbox">
                         <ul class="menu-list">
                             <li class="menu-list-item">
-                                <a href="#" class="menu-list-close-btn"></a>
+                                <Label for="menu-switch" class="menu-list-close-btn"></Label>
                             </li>
                             <li class="menu-list-item">
                                 <span class="menu-list-title">menu</span>
@@ -144,36 +144,40 @@
                 </div>
             </div>
         </div>
+    </header>
+    <nav class="center-breadcramb-header-catalog">
         <div class="breadcramb-header-catalog">
             <h2 class="text-rose-400 page-name-catalog">New arrivals</h2>
             <nav aria-label="breadcrumb">
                 <ul class="breadcrumb-list">
-                    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="#">Home /</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="index.html">Home /</a></li>
                     <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="#">Man /</a></li>
                     <li class="breadcrumb-item breadcramb-act" aria-current="page">New arrivals</li>
                 </ul>
             </nav>
         </div>
-    </header>
+    </nav>
     <main>
         <section>
             <article class="brand-products-item">
                 <nav aria-label="product-navigation">
                     <ul class="products-item-photo-wrp products-card pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
+                        <li class="product-page-item">
+                            <a class="product-page-link" href="#" aria-label="Previous">
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.99512 2L3.99512 7L8.99512 12L7.99512 14L0.995117 7L7.99512 0L8.99512 2Z" />
+                                </svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" class="products-item-link">
-                                <img class="products-item-photo" src="images/woman_in_white_t_shirt.png" height="420"
-                                    alt="product description">
-                            </a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
+                        <li class="center-products-card"></li>
+                        <li class="product-page-item">
+                            <a class="product-page-link" href="#" aria-label="Next">
+                                <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" />
+                                </svg>
                             </a>
                         </li>
                     </ul>
