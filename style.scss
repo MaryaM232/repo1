@@ -163,6 +163,7 @@ body {
     order: -1;
     max-width: 194px;
     text-transform: uppercase;
+    @include txt(400, 24px, 29px, #F16D7F)
 }
 
 .breadcramb-act {
