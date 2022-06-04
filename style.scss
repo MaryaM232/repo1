@@ -181,6 +181,12 @@ body {
     list-style-type: none;
 }
 
+.ul.breadcrumb-list>li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
 .breadcrumb-item-link {
     margin: auto;
 }
@@ -501,7 +507,7 @@ div.header-left>form>label>svg {
     width: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -17px;
     padding: 13px 16px 16px 16px;
     box-sizing: border-box;
     background: #FFFFFF;
@@ -1004,8 +1010,8 @@ div.header-left>form>label>svg {
 }
 
 .showcase {
-    max-width: 360px;
-    max-height: 260px;
+    width: 360px;
+    height: 260px;
     list-style-type: none;
     background-color: rgba(33, 22, 22, 0.7);
     background-blend-mode: darken;
