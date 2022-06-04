@@ -1667,6 +1667,122 @@ div.header-left>form>label>svg {
     margin: auto;
 }
 
+/*начало кода страницы Card*/
+.card-product-description {
+    width: 254px;
+    height: 265px;
+    background-image: url(images/gay_in_panama.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.card-product-description2 {
+    width: 254px;
+    height: 265px;
+    background-image: url(images/man_in_burgundy_jacket.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.card-product-card {
+    display: flex;
+    margin: 96px 15px 40px 0;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.card-left-item-btn {
+    display: flex;
+}
+
+.card-center {
+    display: flex;
+    margin: auto;
+}
+
+.card-content {
+    display: flex;
+}
+
+.card-product-item-meaning-in-block {
+    border: 1px solid #575757;
+    padding: 0 10px;
+}
+
+.card-btn-clear,
+.card-btn-continue {
+    @include txt(300, 14px, 17px, #000000);
+    height: 49px;
+    width: 234px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+
+.card-product-title {
+    text-transform: uppercase;
+    @include txt(400, 24px, 28.8px, #222222)
+}
+
+.card-product-item {
+    @include txt(400, 22px, 26px, #575757);
+}
+
+.card-product-item-meaning-price {
+    @include txt(400, 22px, 26px, #F16D7F);
+}
+
+.card-shipping-adress {
+    margin: 96px 0 0 0;
+}
+
+.header-card-right {
+    @include txt(300, 16px, 19px, #222222);
+}
+
+.adress-country,
+.adress-state,
+.adress-postcode {
+    @include txt(300, 13px, 16px, #222222);
+    width: 360px;
+    height: 45px;
+}
+
+.adress-country {
+    @include txt(300, 13px, 16px, #b1b1b1);
+}
+
+.card-checkout {
+    width: 360px;
+    height: 214px;
+    background-color: #F5F3F3;
+}
+
+.card-checout-interim-result {
+    @include txt(400, 11px, 13px, #4a4a4a);
+    text-transform: uppercase;
+}
+
+.card-checout-result,
+.card-checout-result-currency {
+    @include txt(300, 16px, 19px, #222222);
+    text-transform: uppercase;
+}
+
+.card-checout-result-currency {
+    color: #F16D7F;
+}
+
+.card-checout-btn {
+    @include txt(300, 16px, 19px, #FFFFFF);
+    background-color: #F16D7F;
+    width: 273px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+/*конец кода страницы Card*/
+
 @media (max-width: 768px) {
     .header-top {
         padding: 0 32px;

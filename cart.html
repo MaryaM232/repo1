@@ -137,7 +137,7 @@
             <h2 class="page-name-catalog">Sopping cart</h2>
         </div>
     </div>
-    <main>
+    <main class="card-content">
         <section class="card-center">
             <div class="card-left">
                 <article class="card-product-card">
@@ -145,8 +145,9 @@
                     </div>
                     <div class="card-product-list">
                         <label class="card-product-list-btn"></label>
-                        <h3 class="card-product-title">Mango people t-shirt</h3>
-                        <h4 class="card-product-item">Price: <span class="card-product-item-meaning">$ 300</span></h4>
+                        <h3 class="card-product-title">Mango people <br> t-shirt</h3>
+                        <h4 class="card-product-item">Price: <span class="card-product-item-meaning-price">$ 300</span>
+                        </h4>
                         <h4 class="card-product-item">Color: <span class="card-product-item-meaning">Red</span></h4>
                         <h4 class="card-product-item">Size: <span class="card-product-item-meaning">xl</span></h4>
                         <h4 class="card-product-item">Quantity: <span
@@ -154,12 +155,13 @@
                     </div>
                 </article>
                 <article class="card-product-card">
-                    <div class="card-product-description">
+                    <div class="card-product-description2">
                     </div>
                     <div class="card-product-list">
                         <label class="card-product-list-btn"></label>
                         <h3 class="card-product-title">Mango people t-shirt</h3>
-                        <h4 class="card-product-item">Price: <span class="card-product-item-meaning">$ 300</span></h4>
+                        <h4 class="card-product-item">Price: <span class="card-product-item-meaning-price">$ 300</span>
+                        </h4>
                         <h4 class="card-product-item">Color: <span class="card-product-item-meaning">Red</span></h4>
                         <h4 class="card-product-item">Size: <span class="card-product-item-meaning">xl</span></h4>
                         <h4 class="card-product-item">Quantity: <span
@@ -167,18 +169,20 @@
                     </div>
                 </article>
                 <div class="card-left-item-btn">
-                    <button class="card-btn-clear"></button>
-                    <button class="card-btn-continue"></button>
+                    <form action="#">
+                        <button class="card-btn-clear" type="reset">Clear shopping cart</button>
+                        <button class="card-btn-continue" type="submit">continue shopping</button>
+                    </form>
                 </div>
             </div>
             <div class="card-right">
                 <div class="card-shipping-adress">
-                    <form>
+                    <form action="#">
                         <h3 class="header-card-right">Shipping adress</h3>
-                        <input class="adress-country" type="Bangladesh">
-                        <input class="adress-state" type="State">
-                        <input class="adress-postcode" type="Postcode / Zip">
-                        <input class="adress-quote" type="Get a quote">
+                        <input class="adress-country" type="text" placeholder="Bangladesh"><br>
+                        <input class="adress-state" type="text" placeholder="State"><br>
+                        <input class="adress-postcode" type="text" placeholder="Postcode / Zip"><br>
+                        <input class="adress-quote" type="text" placeholder="Get a quote">
                     </form>
                 </div>
                 <div class="card-checkout">
