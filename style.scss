@@ -1669,17 +1669,27 @@ div.header-left>form>label>svg {
 
 /*начало кода страницы Card*/
 .card-product-description {
-    width: 254px;
-    height: 265px;
+    width: 262px;
+    height: 306px;
     background-image: url(images/gay_in_panama.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
+.card-product-list {
+    width: 359px;
+    height: 284px;
+    padding: 22px 0 0 31px;
+}
+
+.card-product-list-btn {
+    display: flex;
+}
+
 .card-product-description2 {
-    width: 254px;
-    height: 265px;
+    width: 262px;
+    height: 306px;
     background-image: url(images/man_in_burgundy_jacket.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -1688,12 +1698,19 @@ div.header-left>form>label>svg {
 
 .card-product-card {
     display: flex;
-    margin: 96px 15px 40px 0;
+    margin: 96px 0 72.5px 0;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .card-left-item-btn {
     display: flex;
+    justify-content: space-between;
+    margin: 0 0 128.5px 0;
+
+}
+
+.card-left {
+    margin: 0 128px 0 0;
 }
 
 .card-center {
@@ -1707,25 +1724,31 @@ div.header-left>form>label>svg {
 
 .card-product-item-meaning-in-block {
     border: 1px solid #575757;
-    padding: 0 10px;
+    padding: 0 15.5px;
+    margin: 0 0 0 24.4px;
 }
 
 .card-btn-clear,
 .card-btn-continue {
-    @include txt(300, 14px, 17px, #000000);
-    height: 49px;
-    width: 234px;
+    @include txt(300, 14px, 16.8px, #000000);
+    padding: 17px 41px 16px 39px;
     text-transform: uppercase;
     background-color: #ffffff;
+    border: 1px solid #A4A4A4;
 }
 
 .card-product-title {
     text-transform: uppercase;
-    @include txt(400, 24px, 28.8px, #222222)
+    @include txt(400, 24px, 28.8px, #222222);
+    margin-bottom: 42px;
 }
 
 .card-product-item {
     @include txt(400, 22px, 26px, #575757);
+}
+
+.adress-quote {
+    padding: 10px 14.2px 12px 15.2px;
 }
 
 .card-product-item-meaning-price {
@@ -1733,11 +1756,12 @@ div.header-left>form>label>svg {
 }
 
 .card-shipping-adress {
-    margin: 96px 0 0 0;
+    margin: 96px 0 57px 0;
 }
 
 .header-card-right {
-    @include txt(300, 16px, 19px, #222222);
+    @include txt(300, 16px, 19.2px, #222222);
+    text-transform: uppercase;
 }
 
 .adress-country,
@@ -1746,27 +1770,37 @@ div.header-left>form>label>svg {
     @include txt(300, 13px, 16px, #222222);
     width: 360px;
     height: 45px;
+    padding: 0 0 0 15px;
+}
+
+.adress-postcode {
+    margin: 20.5px 0 23.5px 0;
 }
 
 .adress-country {
-    @include txt(300, 13px, 16px, #b1b1b1);
+    @include txt(300, 13px, 16px, #B1B1B1);
+    margin: 20.5px 0 21px 0;
 }
 
 .card-checkout {
     width: 360px;
     height: 214px;
     background-color: #F5F3F3;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-checout-interim-result {
     @include txt(400, 11px, 13px, #4a4a4a);
     text-transform: uppercase;
+    margin: 39px 34px 12px 0;
 }
 
 .card-checout-result,
 .card-checout-result-currency {
     @include txt(300, 16px, 19px, #222222);
     text-transform: uppercase;
+    padding: 0 19px 0 0;
 }
 
 .card-checout-result-currency {
@@ -1779,6 +1813,59 @@ div.header-left>form>label>svg {
     width: 273px;
     height: 50px;
     text-transform: uppercase;
+    margin: auto;
+}
+
+.card-close-btn {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 8px;
+    left: 131px;
+}
+
+.card-close-btn::before,
+.card-close-btn::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #6F6E6E;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    left: -3px;
+    transform: rotate(45deg);
+}
+
+.card-close-btn::after {
+    transform: rotate(-45deg)
+}
+
+.card-close-btn:hover::before,
+.card-close-btn:hover::after {
+    background: #B7B6B6;
+}
+
+.card-close-btn:active::before,
+.card-close-btn:active::after {
+    background: #535353;
+}
+
+.result-basket {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.card-checout-horisontal {
+    Width: 275px;
+    Height: 1px;
+    background: #E2E2E2;
+    margin: auto;
 }
 
 /*конец кода страницы Card*/
