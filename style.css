@@ -17,6 +17,7 @@ body {
 .header-top {
   background: #222222;
   min-height: 75px;
+  padding: 0 20px;
 }
 
 .header-center-block {
@@ -45,11 +46,6 @@ body {
 .header-basket {
   position: relative;
   display: block;
-}
-
-.basket-img {
-  z-index: 0;
-  position: absolute;
 }
 
 .header-basket:hover :first-child {
@@ -193,6 +189,10 @@ body {
           order: -1;
   max-width: 194px;
   text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
 }
 
 .breadcramb-act {
@@ -217,6 +217,12 @@ body {
       -ms-flex-order: 2;
           order: 2;
   list-style-type: none;
+}
+
+.ul.breadcrumb-list > li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
 }
 
 .breadcrumb-item-link {
@@ -558,7 +564,7 @@ div.header-left > form > label > svg {
   width: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -17px;
   padding: 13px 16px 16px 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1544,9 +1550,6 @@ div.header-left > form > label > svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1856,10 +1859,329 @@ div.header-left > form > label > svg {
 .product-page-item {
   width: 47px;
   height: 47px;
+  background: rgba(42, 42, 42, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-page-link {
+  margin: auto;
+}
+
+.product-page-item:hover > .product-page-link > svg {
+  fill: #F16D7F;
 }
 
 .products-card {
   max-width: 2100px;
   margin: auto;
+}
+
+/*начало кода страницы Card*/
+.card-product-description {
+  width: 262px;
+  height: 306px;
+  background-image: url(images/gay_in_panama.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.card-product-list {
+  width: 359px;
+  height: 284px;
+  padding: 22px 0 0 31px;
+}
+
+.card-product-list-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-product-description2 {
+  width: 262px;
+  height: 306px;
+  background-image: url(images/man_in_burgundy_jacket.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.card-product-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 96px 0 72.5px 0;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.card-left-item-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 128.5px 0;
+}
+
+.card-left {
+  margin: 0 128px 0 0;
+}
+
+.card-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-product-item-meaning-in-block {
+  border: 1px solid #575757;
+  padding: 0 15.5px;
+  margin: 0 0 0 24.4px;
+}
+
+.card-btn-clear,
+.card-btn-continue {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #000000;
+  padding: 17px 41px 16px 39px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #A4A4A4;
+}
+
+.card-product-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #222222;
+  margin-bottom: 42px;
+}
+
+.card-product-item {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.adress-quote {
+  padding: 10px 14.2px 12px 15.2px;
+}
+
+.card-product-item-meaning-price {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #F16D7F;
+}
+
+.card-shipping-adress {
+  margin: 96px 0 57px 0;
+}
+
+.header-card-right {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.adress-country,
+.adress-state,
+.adress-postcode {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #222222;
+  width: 360px;
+  height: 45px;
+  padding: 0 0 0 15px;
+}
+
+.adress-postcode {
+  margin: 20.5px 0 23.5px 0;
+}
+
+.adress-country {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin: 20.5px 0 21px 0;
+}
+
+.card-checkout {
+  width: 360px;
+  height: 214px;
+  background-color: #F5F3F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-checout-interim-result {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  margin: 39px 34px 12px 0;
+}
+
+.card-checout-result,
+.card-checout-result-currency {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  text-transform: uppercase;
+  padding: 0 19px 0 0;
+}
+
+.card-checout-result-currency {
+  color: #F16D7F;
+}
+
+.card-checout-btn {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  width: 273px;
+  height: 50px;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.card-close-btn {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 8px;
+  left: 131px;
+}
+
+.card-close-btn::before,
+.card-close-btn::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #6F6E6E;
+  border-radius: 10px;
+  position: absolute;
+  top: 5px;
+  left: -3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.card-close-btn::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.card-close-btn:hover::before,
+.card-close-btn:hover::after {
+  background: #B7B6B6;
+}
+
+.card-close-btn:active::before,
+.card-close-btn:active::after {
+  background: #535353;
+}
+
+.result-basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.card-checout-horisontal {
+  Width: 275px;
+  Height: 1px;
+  background: #E2E2E2;
+  margin: auto;
+}
+
+/*конец кода страницы Card*/
+@media (max-width: 768px) {
+  .header-top {
+    padding: 0 32px;
+  }
+  .banner {
+    min-height: 368px;
+    margin: 0;
+  }
+  .banner-top {
+    background-position: bottom left;
+  }
+  .banner-title {
+    max-width: 283px;
+    font-size: 44px;
+    line-height: 52.8px;
+    margin: 0;
+  }
+  .banner-subtitle {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  .banner-title::before {
+    top: -1px;
+    left: -28px;
+  }
+  .categories {
+    padding: 20px 16px 0 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .showcase {
+    width: 233px;
+    height: 168px;
+  }
+  .showcase4 {
+    height: 116px;
+  }
+  .showcase-line {
+    margin: 0 0 20px 0;
+  }
+  .showcase-title {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  .categories {
+    margin: 0 auto 155px auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
