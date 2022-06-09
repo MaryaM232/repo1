@@ -177,10 +177,6 @@ body {
 
 .breadcrumb-item {
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #636363;
 }
 
 .page-name-catalog {
@@ -219,18 +215,19 @@ body {
   list-style-type: none;
 }
 
-.ul.breadcrumb-list > li + li:before {
-  padding: 8px;
-  color: black;
+.breadcrumb-list > li + li:before {
+  padding: 0 3px 0 4px;
+  color: #636363;
   content: "/\00a0";
 }
 
 .breadcrumb-item-link {
   margin: auto;
-}
-
-.breadcrumb-item {
-  margin: 0 7.29px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  text-decoration: none;
 }
 
 /*конец кода хлебных крошек каталог*/
