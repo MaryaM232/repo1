@@ -924,19 +924,16 @@ div.header-left > form > label > svg {
 
 .list-size,
 .list-treading {
-  width: 80px;
   border: none;
   background-color: transparent;
   position: relative;
 }
 
-.list-treading {
-  width: 120px;
-}
-
 .list-size-btn-title {
   display: block;
-  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin: 0;
   padding: 0;
   border: none;
@@ -948,14 +945,10 @@ div.header-left > form > label > svg {
   background-color: transparent;
   text-align: left;
   text-transform: uppercase;
-  position: relative;
 }
 
 .list-size-btn-title svg {
   fill: #6F6E6E;
-  position: absolute;
-  top: 40%;
-  right: 27px;
 }
 
 .list-size-btn-title:hover {
@@ -995,10 +988,12 @@ div.header-left > form > label > svg {
   padding: 9.5px 9.5px 9.5px 31px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #fff;
+  background: #FFFFFF;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
   top: 18px;
-  left: 0px;
+  left: 115%;
   z-index: 1;
 }
 
@@ -1020,11 +1015,11 @@ div.header-left > form > label > svg {
   margin: 0 0 6px 0;
   position: relative;
   text-transform: uppercase;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Roboto';
+  font-family: sans-serif;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 16.41px;
+  line-height: 16px;
   color: #6F6E6E;
 }
 
@@ -1820,8 +1815,8 @@ div.header-left > form > label > svg {
   fill: #6F6E6E;
 }
 
-.nav-item {
-  margin-right: 10px;
+.nav-item-center {
+  margin: 0 28px;
 }
 
 .haeder-product-horisontal {
