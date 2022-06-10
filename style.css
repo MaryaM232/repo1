@@ -1974,6 +1974,13 @@ div.header-left > form > label > svg {
 
 .adress-quote {
   padding: 10px 14.2px 12px 15.2px;
+  border: 1px solid #A4A4A4;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  background-color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .card-product-item-meaning-price {
