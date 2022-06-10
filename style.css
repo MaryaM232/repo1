@@ -528,7 +528,7 @@ div.header-left > form > label > svg {
 .filter-btn {
   display: block;
   width: 100%;
-  padding: 0;
+  padding: 0 0 16px 0;
   background-color: transparent;
   border: none;
   color: #000000;
@@ -560,8 +560,8 @@ div.header-left > form > label > svg {
   display: none;
   width: 100%;
   position: absolute;
-  top: 0;
-  left: -17px;
+  top: -13px;
+  left: -16px;
   padding: 13px 16px 16px 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
