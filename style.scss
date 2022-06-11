@@ -1503,9 +1503,9 @@ div.header-left>form>label>svg {
     list-style-type: none;
     justify-content: center;
     border: 1px solid #EBEBEB;
-    max-width: 175px;
+    width: max-content;
     margin: auto;
-    padding: 13px;
+    padding: 12px 8px 13px 8px;
 }
 
 .page-link,
@@ -1519,12 +1519,12 @@ div.header-left>form>label>svg {
 }
 
 .page-item:nth-child(1)>a>svg,
-.page-item:nth-child(5)>a>svg {
+.page-item:nth-child(8)>a>svg {
     fill: #000000;
 }
 
 .page-item {
-    margin: 0 15px;
+    margin: 0 7px;
 }
 
 /*код страницы продукты*/
