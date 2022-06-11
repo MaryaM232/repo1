@@ -1944,6 +1944,7 @@ div.header-left > form > label > svg {
   margin: 0 0 0 24.4px;
   padding: 0.5px 0 1.6px 15px;
   max-width: 38px;
+  text-align: center;
 }
 
 .card-btn-clear,
@@ -2078,6 +2079,8 @@ div.header-left > form > label > svg {
 
 .card-close-btn {
   display: block;
+  border: none;
+  background: #FFFFFF;
   width: 12px;
   height: 12px;
   margin: 0;
