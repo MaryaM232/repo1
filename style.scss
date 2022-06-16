@@ -47,6 +47,7 @@ body {
 .header-basket {
     position: relative;
     display: block;
+    min-width: 44px;
 }
 
 .header-basket:hover :first-child {
@@ -103,6 +104,7 @@ body {
 
 .banner-subtitle {
     @include txt(700, 32px, 58px, #222222);
+    display: block;
 
     span {
         color: #F16D7F;
@@ -976,6 +978,18 @@ div.header-left>form>label>svg {
     text-transform: uppercase;
 }
 
+.showcase {
+    width: 360px;
+    height: 260px;
+    display: flex;
+    list-style-type: none;
+    background-color: rgba(33, 22, 22, 0.7);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .showcase1 {
     background-image: url(images/blonde_in_black_outfit.png);
 
@@ -993,17 +1007,11 @@ div.header-left>form>label>svg {
 .showcase4 {
     height: 180px;
     max-width: $weight;
+    display: flex;
     background-image: url(images/business_abstraction.png);
     background-color: rgba(33, 22, 22, 0.7);
     background-blend-mode: darken;
-}
-
-.showcase {
-    width: 360px;
-    height: 260px;
-    list-style-type: none;
-    background-color: rgba(33, 22, 22, 0.7);
-    background-blend-mode: darken;
+    background-size: contain;
 }
 
 .showcase-line {
@@ -1029,7 +1037,7 @@ div.header-left>form>label>svg {
     width: 100%;
     text-decoration: none;
     flex-direction: column;
-    padding: 25% 0;
+    margin: auto;
 }
 
 .showcase-link1 {
@@ -1040,7 +1048,7 @@ div.header-left>form>label>svg {
     width: 100%;
     text-decoration: none;
     flex-direction: column;
-    padding: 5% 0;
+    margin: auto;
 }
 
 /*конец кода рекламного блока*/
@@ -1049,6 +1057,20 @@ div.header-left>form>label>svg {
     flex-direction: column;
     align-items: center;
     margin-bottom: 48px;
+}
+
+.between-section-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.between-section-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
 }
 
 .footer-center-block {
@@ -1069,7 +1091,6 @@ div.header-left>form>label>svg {
 
 /*код карточек товара*/
 .products {
-    width: 100%;
     margin: 0 0 95.5px 0;
 }
 
@@ -1276,10 +1297,6 @@ div.header-left>form>label>svg {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-.features-item:nth-child(4n-1) {
-    margin: 0;
 }
 
 .features-item-icon {
@@ -2047,4 +2064,42 @@ div.header-left>form>label>svg {
         margin: 0 auto 155px auto;
     }
 
+    .between-section {
+        margin: 0 0 73px 0;
+    }
+
+    .products {
+        margin: 0 16px 65px 16px;
+    }
+
+    .features {
+        display: flex;
+        padding: 0 0 64px 0;
+    }
+
+    .center-block-features {
+        display: block;
+    }
+
+    .features-item {
+        margin: 48px auto 0 auto;
+    }
+
+    .subscribe {
+        display: flex;
+    }
+
+    .footer-center-block {
+        display: block;
+        margin: auto;
+        padding: 54px 0 140px 0;
+    }
+
+    .subscribe-form-subtitle {
+        margin: 0 0 27px 0;
+    }
+
+    .copyright {
+        padding: 23px 4.2% 23px 4.2%;
+    }
 }
