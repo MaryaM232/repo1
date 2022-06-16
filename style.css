@@ -951,6 +951,7 @@ div.header-left > form > label > svg {
 
 .list-size-btn-title svg {
   fill: #6F6E6E;
+  padding: 0 0 0 10px;
 }
 
 .list-size-btn-title:hover {
@@ -1706,7 +1707,7 @@ div.header-left > form > label > svg {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin: auto;
+  margin: 18.5px auto 0 auto;
   padding: 12px 8px 13px 8px;
 }
 
@@ -2364,6 +2365,21 @@ div.header-left > form > label > svg {
   }
   .copyright {
     padding: 23px 4.2% 23px 4.2%;
+  }
+  .breadcramb-header-catalog {
+    margin: 0 16px;
+  }
+  .center-catalog-nav {
+    padding: 23px 16px 40px 16px;
+  }
+  .center-block-card > li:nth-child(3) {
+    display: none;
+  }
+  .pagination {
+    margin: 10.5px auto 0 auto;
+  }
+  .products {
+    margin: 0 0 63.5px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
