@@ -1555,7 +1555,7 @@ div.header-left>form>label>svg {
 }
 
 .products-main-center-card {
-    width: 1141px;
+    max-width: 1141px;
     min-height: 602px;
     position: relative;
     margin: auto;
@@ -1573,7 +1573,7 @@ div.header-left>form>label>svg {
     padding: 65px 0;
     border: 1px solid #EAEAEA;
     position: absolute;
-    top: -38px;
+    top: -65px;
     background-color: #FFFFFF;
 }
 
@@ -2091,7 +2091,7 @@ div.header-left>form>label>svg {
     }
 
     .section-products {
-        margin: 64px 16px 65px 16px;
+        margin: 129px 16px 128px 16px;
     }
 
     .features {
@@ -2148,4 +2148,9 @@ div.header-left>form>label>svg {
     .center-products-card {
         min-height: 624px;
     }
+
+    .products-item-center-card {
+        top: 0px;
+    }
+
 }
