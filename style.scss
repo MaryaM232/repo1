@@ -1077,8 +1077,8 @@ div.header-left>form>label>svg {
 .footer-center-block {
     display: flex;
     justify-content: space-between;
-    padding: 86px 6% 0 0;
-    max-width: $weight-90px;
+    padding: 86px 6% 0 1%;
+    max-width: $weight;
     margin: auto;
 }
 
@@ -1550,8 +1550,8 @@ div.header-left>form>label>svg {
     background-color: #F7F7F7;
 }
 
-.products {
-    margin: 664px 16px 65px 16px;
+.section-products {
+    margin: 119px 16px 65px 16px;
 }
 
 .products-main-center-card {
@@ -1582,10 +1582,6 @@ div.header-left>form>label>svg {
     height: 3.03px;
     margin: 12.1px auto;
     background-color: #EF5B70;
-}
-
-.brand-products-item {
-    display: flex;
 }
 
 .header-product-item,
@@ -2094,7 +2090,7 @@ div.header-left>form>label>svg {
         margin: 0 0 73px 0;
     }
 
-    .products {
+    .section-products {
         margin: 64px 16px 65px 16px;
     }
 
