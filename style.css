@@ -1196,7 +1196,7 @@ div.header-left > form > label > svg {
 }
 
 /*код карточек товара*/
-.products {
+.products-catalog {
   margin: 0 0 95.5px 0;
 }
 
@@ -1738,6 +1738,10 @@ div.header-left > form > label > svg {
   background-color: #F7F7F7;
 }
 
+.products {
+  margin: 664px 16px 65px 16px;
+}
+
 .products-item-center-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1747,10 +1751,17 @@ div.header-left > form > label > svg {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  max-width: 1141px;
-  max-height: 601px;
+  width: 100%;
+  max-width: 1140px;
+  max-height: 600px;
   z-index: 2;
-  margin: 65px auto;
+  margin: 0 26.6%;
+  padding: 65px 0;
+  border: 1px solid #EAEAEA;
+  position: absolute;
+  top: 725px;
+  z-index: 2;
+  background-color: #FFFFFF;
 }
 
 .haeder-product-horisontal-line {
@@ -1758,6 +1769,10 @@ div.header-left > form > label > svg {
   height: 3.03px;
   margin: 12.1px auto;
   background-color: #EF5B70;
+}
+
+.brand-products-item {
+  position: relative;
 }
 
 .header-product-item,
@@ -1843,6 +1858,10 @@ div.header-left > form > label > svg {
   margin: 0 28px;
 }
 
+.nav-item-center-product {
+  margin: 0 23px;
+}
+
 .haeder-product-horisontal {
   width: 641px;
   height: 1px;
@@ -1857,7 +1876,7 @@ div.header-left > form > label > svg {
 
 .center-products-card {
   width: 100%;
-  height: 777px;
+  min-height: 777px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2336,7 +2355,7 @@ div.header-left > form > label > svg {
     margin: 0 0 73px 0;
   }
   .products {
-    margin: 0 16px 65px 16px;
+    margin: 664px 16px 65px 16px;
   }
   .features {
     display: -webkit-box;
@@ -2378,8 +2397,11 @@ div.header-left > form > label > svg {
   .pagination {
     margin: 10.5px auto 0 auto;
   }
-  .products {
+  .products-catalog {
     margin: 0 0 63.5px 0;
+  }
+  .center-products-card {
+    min-height: 624px;
   }
 }
 /*# sourceMappingURL=style.css.map */

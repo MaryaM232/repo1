@@ -1077,8 +1077,8 @@ div.header-left>form>label>svg {
 .footer-center-block {
     display: flex;
     justify-content: space-between;
-    padding: 86px 10% 0 6%;
-    max-width: $weight;
+    padding: 86px 6% 0 0;
+    max-width: $weight-90px;
     margin: auto;
 }
 
@@ -1091,7 +1091,7 @@ div.header-left>form>label>svg {
 }
 
 /*код карточек товара*/
-.products {
+.products-catalog {
     margin: 0 0 95.5px 0;
 }
 
@@ -1550,14 +1550,31 @@ div.header-left>form>label>svg {
     background-color: #F7F7F7;
 }
 
+.products {
+    margin: 664px 16px 65px 16px;
+}
+
+.products-main-center-card {
+    width: 1141px;
+    min-height: 602px;
+    position: relative;
+    margin: auto;
+}
+
 .products-item-center-card {
     display: flex;
     flex-direction: column;
     text-align: center;
-    max-width: 1141px;
-    max-height: 601px;
+    width: 100%;
+    max-width: 1140px;
+    max-height: 600px;
     z-index: 2;
-    margin: 65px auto;
+    margin: 0;
+    padding: 65px 0;
+    border: 1px solid #EAEAEA;
+    position: absolute;
+    top: -38px;
+    background-color: #FFFFFF;
 }
 
 .haeder-product-horisontal-line {
@@ -1565,6 +1582,10 @@ div.header-left>form>label>svg {
     height: 3.03px;
     margin: 12.1px auto;
     background-color: #EF5B70;
+}
+
+.brand-products-item {
+    display: flex;
 }
 
 .header-product-item,
@@ -1635,6 +1656,10 @@ div.header-left>form>label>svg {
     margin: 0 28px;
 }
 
+.nav-item-center-product {
+    margin: 0 23px;
+}
+
 .haeder-product-horisontal {
     width: 641px;
     height: 1px;
@@ -1649,7 +1674,7 @@ div.header-left>form>label>svg {
 
 .center-products-card {
     width: 100%;
-    height: 777px;
+    min-height: 777px;
     display: flex;
     align-items: center;
     background-image: url(images/woman_in_white_t_shirt.png);
@@ -2070,7 +2095,7 @@ div.header-left>form>label>svg {
     }
 
     .products {
-        margin: 0 16px 65px 16px;
+        margin: 64px 16px 65px 16px;
     }
 
     .features {
@@ -2120,7 +2145,11 @@ div.header-left>form>label>svg {
         margin: 10.5px auto 0 auto;
     }
 
-    .products {
+    .products-catalog {
         margin: 0 0 63.5px 0;
+    }
+
+    .center-products-card {
+        min-height: 624px;
     }
 }
