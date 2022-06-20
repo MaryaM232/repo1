@@ -2335,4 +2335,48 @@ div.header-left>form>label>svg {
     .copyright {
         padding: 43px 0 9px 0;
     }
+
+    .breadcramb-header-catalog {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .page-name-catalog {
+        margin: 24px 0 32px 0;
+    }
+
+    .filter-btn>span {
+        display: none;
+    }
+
+    .filter-btn>svg {
+        width: 37.5px;
+        height: 25px;
+    }
+
+    .center-catalog-nav {
+        padding: 24px 8px 13px 0px;
+    }
+
+    .list-size-btn-title {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .list-size-btn-title svg {
+        padding: 0 0 0 7px;
+    }
+
+    .filter-list-wrp {
+        width: max-content;
+    }
+
+    .pagination {
+        margin: 20.5px auto 0 auto;
+    }
+
+    .products-catalog {
+        margin: 0 0 64.5px 0;
+    }
 }
