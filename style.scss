@@ -1013,6 +1013,7 @@ div.header-left>form>label>svg {
     background-color: rgba(33, 22, 22, 0.7);
     background-blend-mode: darken;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .showcase-line {
@@ -1034,7 +1035,6 @@ div.header-left>form>label>svg {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
-    min-height: inherit;
     width: 100%;
     text-decoration: none;
     flex-direction: column;
@@ -1412,7 +1412,7 @@ div.header-left>form>label>svg {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 356px;
+    max-width: 346px;
     margin: 0 auto;
 }
 
@@ -2227,5 +2227,112 @@ div.header-left>form>label>svg {
     .registration-right-txt {
         font-size: 16px;
         line-height: 19px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .header-contacts,
+    .header-basket {
+        display: none;
+    }
+
+    .header-top {
+        padding: 0 16px;
+    }
+
+    .banner-top {
+        background: #F1E4E6;
+    }
+
+    .banner {
+        min-height: 363px;
+    }
+
+    .banner-title {
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .banner-subtitle {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .banner-title::before {
+        height: 61px;
+        top: 10px;
+        left: -26px;
+    }
+
+    .showcase-line {
+        display: block;
+    }
+
+    .showcase {
+        margin: auto;
+        width: 100%;
+        max-width: 343px;
+        min-height: 247px;
+    }
+
+    .categories {
+        margin: 64px auto 64px auto;
+    }
+
+    .showcase2 {
+        margin: 32px 0 32px 0;
+    }
+
+    .showcase4 {
+        background-size: inherit;
+        background-position: center;
+    }
+
+    .between-section {
+        margin: 0 0 64px 0;
+    }
+
+    .products-item {
+        margin: 0 auto 16px auto;
+    }
+
+    .products-btn {
+        margin: 25px auto 96.5px;
+    }
+
+    .center-bottom-block {
+        flex-direction: column-reverse;
+    }
+
+    .subscribe-form-title {
+        margin-top: 59px;
+    }
+
+    .subscribe-form-subtitle {
+        margin: 0 0 22px 0;
+    }
+
+    .footer-center-block {
+        padding: 54px 0 109px 0;
+    }
+
+    .features {
+        padding: 0 0 81px 0;
+    }
+
+    .copyright-txt {
+        margin: auto;
+    }
+
+    .socials-list {
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .copyright {
+        padding: 43px 0 9px 0;
     }
 }
