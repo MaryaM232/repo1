@@ -1708,7 +1708,7 @@ div.header-left>form>label>svg {
     min-height: 306px;
     background-image: url(images/gay_in_panama.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
@@ -1737,7 +1737,7 @@ div.header-left>form>label>svg {
 .card-product-card1,
 .card-product-card2 {
     display: flex;
-    max-width: 734px;
+    width: 652px;
     margin: 96px 0 72.5px 0;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
@@ -1946,8 +1946,9 @@ div.header-left>form>label>svg {
 .registration-last-name,
 .registration-email,
 .registration-password {
-    width: 360px;
+    width: 344px;
     height: 45px;
+    padding: 0 0 0 16px;
 }
 
 .registration-gender {
@@ -2172,6 +2173,11 @@ div.header-left>form>label>svg {
         margin: 40px 0 62.5px 0;
     }
 
+    .card-product-card1,
+    .card-product-card2 {
+        width: 734px;
+    }
+
     .card-left {
         margin: 59px 15px 64.5px 15px;
     }
@@ -2385,7 +2391,7 @@ div.header-left>form>label>svg {
     }
 
     .haeder-product-horisontal {
-        margin: 32px auto 49.5 auto;
+        margin: 32px auto 49.5px auto;
         width: 375px;
     }
 
@@ -2415,13 +2421,9 @@ div.header-left>form>label>svg {
         margin: 128px auto 64px auto;
     }
 
-    .card-left {
-        margin: 39px auto 64.5px auto;
-    }
-
     .card-product-card1,
     .card-product-card2 {
-        max-width: 734px;
+        max-width: 368px;
         margin: 0;
     }
 
@@ -2434,10 +2436,6 @@ div.header-left>form>label>svg {
         max-width: 143px;
         width: 100%;
         min-height: 188px;
-    }
-
-    .card-product-description {
-        background-size: cover;
     }
 
     .card-product-list {
@@ -2483,5 +2481,13 @@ div.header-left>form>label>svg {
         max-width: 24px;
         font-size: 10px;
         line-height: 12px;
+    }
+
+    .card-left {
+        margin: 39px 9px 48px 8px;
+    }
+
+    .adress-quote {
+        margin: 0 0 48.5px 0;
     }
 }

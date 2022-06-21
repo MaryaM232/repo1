@@ -175,38 +175,36 @@
                                 class="card-product-item-meaning">Red</span></span><br>
                         <span class="card-product-item">Size: <span
                                 class="card-product-item-meaning">xl</span></span><br>
-                        <label class="card-product-item" for="productNum">Quantity:</label>
-                        <input id="productNum" class="card-product-item-meaning-in-block" type="number" placeholder="2"
+                        <label class="card-product-item" for="productNum2">Quantity:</label>
+                        <input id="productNum2" class="card-product-item-meaning-in-block" type="number" placeholder="2"
                             min="0" max="100">
                     </div>
                 </article>
                 <div class="card-left-item-btn">
-                    <button class="card-btn-clear" type="reset">Clear shopping cart</button>
-                    <button class="card-btn-continue" type="button">continue shopping</button>
+                    <a class="card-btn-clear">Clear shopping cart</a>
+                    <a class="card-btn-continue">continue shopping</a>
                 </div>
             </div>
             <div class="card-right">
-                <div class="card-shipping-adress">
-                    <form action="#">
+                <form action="#">
+                    <div class="card-shipping-adress">
                         <h3 class="header-card-right">Shipping adress</h3>
                         <input class="adress-country" type="text" placeholder="Bangladesh"><br>
                         <input class="adress-state" type="text" placeholder="State"><br>
                         <input class="adress-postcode" type="text" placeholder="Postcode / Zip"><br>
-                        <button class="adress-quote" type="submit">Get a quote</button>
-                    </form>
-                </div>
-                <div class="card-checkout">
-                    <form action="#"></form>
-                    <div class="result-basket">
-                        <h4 class="card-checout-interim-result">Sub total $ 900</h4>
-                        <h3 class="card-checout-result">Grand total <span class="card-checout-result-currency">$
-                                900</span>
-                        </h3>
+                        <input class="adress-quote" type="text" placeholder="Get a quote">
                     </div>
-                    <hr class="card-checout-horisontal">
-                    <button class="card-checout-btn" type="submit">Proceed to checkout</button>
-                    </form>
-                </div>
+                    <div class="card-checkout">
+                        <div class="result-basket">
+                            <h4 class="card-checout-interim-result">Sub total $ 900</h4>
+                            <h3 class="card-checout-result">Grand total <span class="card-checout-result-currency">$
+                                    900</span>
+                            </h3>
+                        </div>
+                        <hr class="card-checout-horisontal">
+                        <button class="card-checout-btn" type="submit">Proceed to checkout</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
