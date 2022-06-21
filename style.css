@@ -2125,10 +2125,14 @@ div.header-left > form > label > svg {
   line-height: 19px;
   color: #FFFFFF;
   background-color: #F16D7F;
-  width: 273px;
+  width: 167px;
   height: 50px;
   text-transform: uppercase;
   margin: auto;
+}
+
+.card-checout-btn > svg {
+  padding: 0 0 0 20px;
 }
 
 .card-close-btn {
@@ -2278,7 +2282,7 @@ div.header-left > form > label > svg {
 }
 
 .registration-right {
-  margin-left: 11.23%;
+  margin: 0 0 0 11.23%;
 }
 
 .header-card-right {
@@ -2470,7 +2474,7 @@ div.header-left > form > label > svg {
     margin: 40px 15px 96px 15px;
   }
   .registration-right {
-    margin-left: 15px;
+    margin: 0 0 0 15px;
   }
   .header-card-right-txt {
     font-size: 16px;
@@ -2693,6 +2697,16 @@ div.header-left > form > label > svg {
   }
   .adress-quote {
     margin: 0 0 48.5px 0;
+  }
+  .registration-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 40px 8px 96px 8px;
+  }
+  .registration-right {
+    margin: 40px 0 0 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
