@@ -1768,6 +1768,10 @@ div.header-left>form>label>svg {
     padding: 0.5px 0 1.6px 15px;
     max-width: 38px;
     text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #656565;
 }
 
 .card-btn-clear,
@@ -2409,5 +2413,75 @@ div.header-left>form>label>svg {
 
     .section-products {
         margin: 128px auto 64px auto;
+    }
+
+    .card-left {
+        margin: 39px auto 64.5px auto;
+    }
+
+    .card-product-card1,
+    .card-product-card2 {
+        max-width: 734px;
+        margin: 0;
+    }
+
+    .card-product-card2 {
+        margin: 32px 0 30px 0;
+    }
+
+    .card-product-description,
+    .card-product-description2 {
+        max-width: 143px;
+        width: 100%;
+        min-height: 188px;
+    }
+
+    .card-product-description {
+        background-size: cover;
+    }
+
+    .card-product-list {
+        max-width: 214px;
+        width: 100%;
+        height: 188px;
+        padding: 13px 0 0 17px;
+    }
+
+    .card-product-title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .card-product-item,
+    .card-product-item-meaning-price,
+    .card-product-item-meaning {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .card-close-btn {
+        left: 62px;
+    }
+
+    .card-btn-clear,
+    .card-btn-continue {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 8px 17px 8px 17px;
+    }
+
+    .card-right {
+        flex-direction: column;
+    }
+
+    .card-checkout {
+        margin: auto;
+    }
+
+    .card-product-item-meaning-in-block {
+        padding: 0.5px 0.5px;
+        max-width: 24px;
+        font-size: 10px;
+        line-height: 12px;
     }
 }
