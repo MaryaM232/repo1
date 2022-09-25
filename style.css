@@ -645,7 +645,7 @@ div.header-left > form > label > svg {
   left: 0;
 }
 
-.filter-list-item a {
+.filter-list-item {
   text-transform: uppercase;
   color: #EF5B70;
   text-decoration: none;
@@ -655,7 +655,7 @@ div.header-left > form > label > svg {
   background-color: red;
 }
 
-.filter-list-item:hover a {
+.filter-list-item:hover {
   color: red;
 }
 
